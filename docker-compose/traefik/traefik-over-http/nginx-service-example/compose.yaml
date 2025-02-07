@@ -1,0 +1,14 @@
+---
+services:
+  nginx-app:
+    image: nginx:latest
+    networks:
+      - proxy-network
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.nginx-http.rule=Host(`nginx.localhost`)"
+      - "traefik.http.routers.nginx-http.entrypoints=web"
+networks:
+  proxy-network:
+    external: true
