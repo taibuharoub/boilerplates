@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Discord Server
+    url: https://github.com/taibuharoub/boilerplates/issues
+    about: Please ask and answer questions.
+  - name: Learn
+    url: https://github.com/taibuharoub/boilerplates/issues
+    about: Gain comprehensive knowledge.

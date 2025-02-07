@@ -1,0 +1,36 @@
+{
+  "name": "boilerplates",
+  "version": "1.0.0",
+  "description": "Templates, and configurations for various tools, and technologies.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "pre-commit": "lint-staged",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taibuharoub/boilerplates.git"
+  },
+  "keywords": [
+    "docker"
+  ],
+  "author": "Taibu Haroub <haroubtaibu@gmail.com> (https://tiabu.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taibuharoub/boilerplates/issues"
+  },
+  "homepage": "https://github.com/taibuharoub/boilerplates#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@eslint/js": "^9.19.0",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.4.2",
+    "typescript-eslint": "^8.23.0"
+  }
+}
