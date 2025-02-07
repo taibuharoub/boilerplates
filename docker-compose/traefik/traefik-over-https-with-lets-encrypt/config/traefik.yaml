@@ -1,0 +1,52 @@
+global:
+  checkNewVersion: false
+  sendAnonymousUsage: false
+
+log:
+  level: DEBUG # [DEBUG, INFO, WARNING, ERROR, CRITICAL]
+  # -- (Optional) Enable File Log
+  # format: common # [common, json, logfmt]
+  # filePath: /var/log/traefik/traefik.log
+
+# -- (Optional) Enable Accesslog
+# accessLog:
+#   format: common # [common, json, logfmt]
+#   filePath: /var/log/traefik/access.log
+
+api:
+  dashboard: true
+  insecure: true
+
+entryPoints:
+  web:
+    address: :80
+    http:
+      redirections:
+        entryPoint:
+          to: websecure
+          scheme: https
+  websecure:
+    address: :443
+
+# enable ping so the `traefik healthcheck` works
+ping: {}
+
+certificatesResolvers:
+  cloudflare:
+    acme:
+      email: example@example.com # <-- Change this to your email
+      storage: /var/traefik/certs/cloudflare-acme.json
+      caServer: "https://acme-v02.api.letsencrypt.org/directory"
+      keyType: EC256
+      dnsChallenge:
+        provider: cloudflare # <-- (Optional) Change this to your DNS provider
+        # you need to have these if you're using a dns challenge because otherwise
+        # traefik will try to resolve the names using your local DNS server and this
+        # might not work correctly
+        resolvers:
+          - "1.1.1.1:53"
+          - "8.8.8.8:53"
+providers:
+  docker:
+    endpoint: "unix:///var/run/docker.sock"
+    exposedByDefault: false

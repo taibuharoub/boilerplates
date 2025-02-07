@@ -20,7 +20,7 @@
 
 ## Author
 
-👤 **Taibu Haroub <haroubtaibu@gmail.com> (https://tiabu.dev)**
+👤 **Taibu Haroub <haroubtaibu@gmail.com> (https://www.tiabu.dev)**
 
 * Website: https://taibuharoub.github.io/haro-portfolio/
 * Github: [@taibuharoub](https://github.com/taibuharoub)

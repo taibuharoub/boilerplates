@@ -1,0 +1,1 @@
+Create the "data" folder, this is where let's encrypt will save your generated certificates
