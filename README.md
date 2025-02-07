@@ -35,8 +35,8 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2025 [Taibu Haroub <haroubtaibu@gmail.com> (https://tiabu.dev)](https://github.com/taibuharoub).<br />
+Copyright © 2025 [Taibu Haroub <haroubtaibu@gmail.com> (https://www.tiabu.dev)](https://github.com/taibuharoub).<br />
 This project is [MIT](https://github.com/taibuharoub/boilerplates/blob/master/LICENSE) licensed.
 
 ***
-_Read more blog posts @ [Blog](https://tiabu.dev)_
+_Read more blog posts @ [Blog](https://www.tiabu.dev)_
