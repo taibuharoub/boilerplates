@@ -1,0 +1,22 @@
+services:
+  node:
+    build:
+      context: .
+      # build to the stage named dev
+      target: dev
+    platform: linux/amd64
+    # Not needed when `develop: watch` is used
+    # volumes:
+    #   - .:/app
+    ports:
+      - "3000:3000"
+      - "9229:9229"
+    develop:
+      watch:
+        - action: sync
+          path: ./
+          target: /app
+        - action: rebuild
+          path: package.json
+        - action: rebuild
+          path: package-lock.json
