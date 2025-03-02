@@ -1,12 +1,12 @@
-# Contributing to Boilerplate Templates Various Tools and Technologies
+# Contributing to Boilerplate Templates for Various Tools and Technologies
 
-Thank you for your interest in contributing to Boilerplate Templates be! We welcome contributions from the software community to help improve and enhance this project.
+Thank you for your interest in contributing to Boilerplate Templates! We welcome contributions from the software community to help improve and enhance this project.
 
 By contributing, you can help make Boilerplate Templates be a more valuable resource for developers and contribute to the growth of the open-source community.
 
 ## Table of Contents
 
-- [Contributing to Boilerplate Templates Various Tools and Technologies](#contributing-to-boilerplate-templates-various-tools-and-technologies)
+- [Contributing to Boilerplate Templates for Various Tools and Technologies](#contributing-to-boilerplate-templates-for-various-tools-and-technologies)
   - [Table of Contents](#table-of-contents)
   - [How to Contribute ](#how-to-contribute-)
   - [Commit Message Format ](#commit-message-format-)
